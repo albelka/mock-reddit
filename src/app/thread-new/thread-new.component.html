@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="row">
+    <div class="input-field col s6">
+      <input #newAuthor>
+      <label  class="active">Author</label>
+    </div>
+    <div class="input-field col s6">
+      <input #newTitle>
+      <label  class="active">Title</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input #newContent>
+      <label  class="active">Content</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s12">
+      <input #newCategory>
+      <label  class="active">Category</label>
+    </div>
+  </div>
+  <button routerLink='' class="btn-floating btn-medium waves-effect waves-light red" (click)='submitForm(newTitle.value, newAuthor.value, newCategory.value, newContent.value)'> Add Thread</button>
+</div>
