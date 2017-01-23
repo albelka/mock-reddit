@@ -1,0 +1,5 @@
+<h2>Categories</h2>
+
+<div *ngFor="let thread of threads" (click)="goToThreadPage(thread)">
+  <h3><em>{{thread.title}}</em> - {{thread.author}}</h3>
+</div>
