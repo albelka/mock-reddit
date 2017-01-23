@@ -8,13 +8,15 @@ import { CategoriesComponent } from './categories/categories.component';
 import { CategorieComponent } from './categorie/categorie.component';
 import { ThreadComponent } from './thread/thread.component';
 import { routing } from './app.routing';
+import { CategoryPipe } from './category.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
     CategorieComponent,
-    ThreadComponent
+    ThreadComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,

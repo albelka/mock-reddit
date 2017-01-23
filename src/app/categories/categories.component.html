@@ -1,5 +1,18 @@
 <h2>Categories</h2>
 
-<div *ngFor="let thread of threads" (click)="goToThreadPage(thread)">
+<div class="row">
+    <div class="input-field col s3">
+      <select class="drop-down" (change)="onChange($event.target.value)" >
+        <option value="" disabled selected>Choose your option</option>
+        <option value="all">All</option>
+        <option value="politics">Politics</option>
+        <option value="awww">Awww</option>
+        <option value="askReddit">Ask Reddit</option>
+      </select>
+    </div>
+  </div>
+  <br>
+
+<div *ngFor="let thread of threads | categoryfilter:filterByCategory" (click)="goToThreadPage(thread)">
   <h3><em>{{thread.title}}</em> - {{thread.author}}</h3>
 </div>
