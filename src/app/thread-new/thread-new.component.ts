@@ -13,7 +13,7 @@ export class ThreadNewComponent{
   constructor(private threadService: ThreadService) { }
 
   submitForm(title, author, category, content) {
-    console.log('hello')
+
     this.threadService.addThread(title, author, category, content);
   }
 }

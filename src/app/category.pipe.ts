@@ -9,7 +9,6 @@ export class CategoryPipe implements PipeTransform {
 
   transform(input: Thread[], threadCategory) {
     var output: Thread[] = [];
-    console.log(threadCategory)
     if (threadCategory === "awww") {
       for (var i = 0; i < input.length; i++) {
         if (input[i].category === threadCategory) {

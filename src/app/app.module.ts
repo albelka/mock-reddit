@@ -10,6 +10,7 @@ import { ThreadComponent } from './thread/thread.component';
 import { routing } from './app.routing';
 import { CategoryPipe } from './category.pipe';
 import { ThreadNewComponent } from './thread-new/thread-new.component';
+import { ThreadEditComponent } from './thread-edit/thread-edit.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ThreadNewComponent } from './thread-new/thread-new.component';
     CategorieComponent,
     ThreadComponent,
     CategoryPipe,
-    ThreadNewComponent
+    ThreadNewComponent,
+    ThreadEditComponent
   ],
   imports: [
     BrowserModule,

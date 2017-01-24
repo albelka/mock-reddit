@@ -17,14 +17,11 @@ export class ThreadService {
       }
     }
   }
-  addThread(title: string, author:string, content: string, category:string) {
+  addThread(title: string, author:string, content: string, category: string) {
     var id = THREADS.length +1
     var newThread: Thread = new Thread(title, author, content, category, id)
     THREADS.push(newThread)
-  }
-
-  updateThread(){
-
+    console.log(newThread)
   }
   deleteThread(){
 
