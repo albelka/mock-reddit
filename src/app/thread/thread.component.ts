@@ -26,4 +26,7 @@ export class ThreadComponent implements OnInit {
   goToEditThreadPage() {
     this.router.navigate(['thread-edit', this.threadId]);
   }
+  deleteThreadClick() {
+    this.threadService.deleteThread(this.threadId)
+  }
 }

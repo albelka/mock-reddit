@@ -21,9 +21,12 @@ export class ThreadService {
     var id = THREADS.length +1
     var newThread: Thread = new Thread(title, author, content, category, id)
     THREADS.push(newThread)
-    console.log(newThread)
   }
-  deleteThread(){
-
+  deleteThread(threadId: number){
+    for (var i =0; i < THREADS.length; i++) {
+       if(threadId === THREADS[i].id) {
+         THREADS.splice(i, 1);
+       }
+    }
   }
 }
